@@ -8,7 +8,7 @@ export function Certificates() {
       id="certificates"
       eyebrow="Certificates & Achievements"
       title="Verified learning, course by course"
-      description="Courses I have completed across AI foundations, generative AI, programming and leadership."
+      description="Courses I have completed across AI foundations, generative AI, emerging technology and leadership."
     >
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {certificates.map((cert) => (
@@ -32,20 +32,16 @@ export function Certificates() {
               <p className="text-sm text-muted-foreground">{cert.issuer ?? 'Certified Course'}</p>
             </div>
 
-            {cert.file ? (
-              <a
-                href={cert.file}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="mt-auto inline-flex h-9 w-fit items-center gap-2 rounded-lg border border-border bg-secondary px-3.5 text-xs font-medium text-foreground transition-colors hover:border-primary/50 hover:text-primary"
-              >
-                View Certificate
-                <ExternalLink className="size-3.5" aria-hidden="true" />
-                <span className="sr-only">— {cert.title}</span>
-              </a>
-            ) : (
-              <p className="mt-auto font-mono text-xs text-muted-foreground">Completed</p>
-            )}
+            <a
+              href={cert.file}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="mt-auto inline-flex h-9 w-fit items-center gap-2 rounded-lg border border-border bg-secondary px-3.5 text-xs font-medium text-foreground transition-colors hover:border-primary/50 hover:text-primary"
+            >
+              View Certificate
+              <ExternalLink className="size-3.5" aria-hidden="true" />
+              <span className="sr-only">— {cert.title}</span>
+            </a>
           </article>
         ))}
       </div>

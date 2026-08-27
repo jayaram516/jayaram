@@ -10,7 +10,6 @@ export const profile = {
   linkedinLabel: 'linkedin.com/in/-jayaram',
   github: 'https://github.com/jayaram516',
   githubLabel: 'github.com/jayaram516',
-  cv: '/B-Jayaram-CV.pdf',
 }
 
 export const navLinks = [
@@ -119,12 +118,6 @@ export const certificates = [
     issuer: null,
     date: '22 March 2026',
     file: '/certificates/ai-and-chatgpt.pdf',
-  },
-  {
-    title: 'Python Programming',
-    issuer: 'Udemy',
-    date: null,
-    file: null,
   },
 ]
 
